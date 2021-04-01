@@ -10,6 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "johnny-five": "^0.14.3",
-    "serialport": "^9.0.7"
+    "serialport": "^9.0.7",
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0"
   }
 }

@@ -1,15 +1,38 @@
-const { Board, Led } = require("johnny-five");
+const express = require('express');
+const bodyParser = require('body-parser');
+const five = require('johnny-five');
 
-const board = new Board({
+const app = express();
+const board = new five.Board({
     port: "COM4"
 });
 
-board.on("ready", () => {
-    const led = new Led(13);
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-    // "blink" the led in 500ms on-off phase periods
-    led.blink(500);
+app.get("/api/led-flash", function (req, res) {
+    // perform some initial cleanup work if needed like resetting LEDs.
+    // ...
+
+
+    let led = new five.Led(13);
+    led.blink(req.body.interval);
+
+    res.json({ message: 'success!'})
+
+    // Some additional work after success
+    // ...
 });
+
+function startServer() {
+    app.listen("5000", () => {
+        console.log("App listening on port 5000");
+    });
+}
+
+board.on('ready', startServer);
+
+
 
 
 
