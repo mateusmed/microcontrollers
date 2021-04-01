@@ -10,13 +10,15 @@ const board = new five.Board({
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get("/api/led-flash", function (req, res) {
-    // perform some initial cleanup work if needed like resetting LEDs.
-    // ...
+app.get("/api/pulse", function (req, res) {
 
+    let pin = new five.Pin(7);
+    pin.high()
 
-    let led = new five.Led(13);
-    led.blink(req.body.interval);
+    setTimeout(function(){
+        pin.low()
+
+    }, 3000);
 
     res.json({ message: 'success!'})
 
