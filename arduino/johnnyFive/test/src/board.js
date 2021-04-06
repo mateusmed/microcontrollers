@@ -39,9 +39,19 @@ app.get("/off", function (req, res) {
 
     res.json({ message: 'success!'})
 
-    // Some additional work after success
-    // ...
 });
+
+/*
+
+require('dns').resolve('www.google.com', function(err) {
+  if (err) {
+     console.log("No connection");
+  } else {
+     console.log("Connected");
+  }
+});
+
+*/
 
 
 
