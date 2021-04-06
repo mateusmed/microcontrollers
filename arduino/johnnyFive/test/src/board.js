@@ -10,7 +10,7 @@ const board = new five.Board({
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get("/api/pulse", function (req, res) {
+app.get("/on", function (req, res) {
 
     let pin = new five.Pin(7);
     pin.high()
@@ -25,6 +25,25 @@ app.get("/api/pulse", function (req, res) {
     // Some additional work after success
     // ...
 });
+
+
+app.get("/off", function (req, res) {
+
+    let pin = new five.Pin(7);
+    pin.high()
+
+    setTimeout(function(){
+        pin.low()
+
+    }, 5000);
+
+    res.json({ message: 'success!'})
+
+    // Some additional work after success
+    // ...
+});
+
+
 
 function startServer() {
     app.listen("5000", () => {
