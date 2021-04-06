@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1144df7-06cb-4209-87bc-d28dcc1d4d54" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/arduino/connection/StandardFirmata.ino" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arduino/blink/src/board.js" beforeDir="false" afterPath="$PROJECT_DIR$/arduino/blink/src/board.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +30,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/arduino/blink" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../c" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -54,6 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1617285446704</updated>
       <workItem from="1617285448208" duration="11929000" />
+      <workItem from="1617713177832" duration="329000" />
     </task>
     <servers />
   </component>
@@ -70,5 +71,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
