@@ -13,8 +13,6 @@ const board = new five.Board({
 });
 
 
-
-
 app.get("/on", function (req, res) {
 
     let pin = new five.Pin(7);
@@ -46,17 +44,6 @@ app.get("/off", function (req, res) {
 
 });
 
-/*
-
-require('dns').resolve('www.google.com', function(err) {
-  if (err) {
-     console.log("No connection");
-  } else {
-     console.log("Connected");
-  }
-});
-
-*/
 
 
 app.get("/analogicSensor", function (req, res) {
