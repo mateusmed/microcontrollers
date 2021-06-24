@@ -1,10 +1,12 @@
 #include <ESP8266WiFi.h>
 
+
+//atenção a distancia, se for fazer testes
 const char* ssid = "***";
 const char* password = "***";
 
 //Shield irá receber as requisições das páginas (o padrão WEB é a porta 80)
-WiFiServer server(90);
+WiFiServer server(80);
 
 String HTTP_req; 
 String URLValue;
@@ -23,6 +25,12 @@ byte modoPinos[qtdePinosDigitais]     = {INPUT_PULLUP, OUTPUT};
 
 //const byte qtdePinosAnalogicos = 0;
 //byte pinosAnalogicos[qtdePinosAnalogicos] = {A0};
+
+
+//setando ip fixo
+IPAddress ip(192, 168, 1, 200);
+IPAddress gateway(192, 168, 1, 1);
+IPAddress subnet(255, 255, 255, 0);
 
 
 // typedef enum { WL_NO_SHIELD = 255,
@@ -45,9 +53,8 @@ void setup(){
     Serial.println(ssid);
 
     WiFi.begin(ssid, password);
+    WiFi.config(ip, gateway, subnet);
 
-
-//     while (WiFi.localIP().toString() == "0.0.0.0"){
     while (WiFi.status() != WL_CONNECTED) {
       delay(500);
       Serial.println("desconectado");
