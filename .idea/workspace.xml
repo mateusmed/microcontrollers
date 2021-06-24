@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1144df7-06cb-4209-87bc-d28dcc1d4d54" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/esp01/my-sketch.ino" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/esp01/Q0257-Sketch.ino" beforeDir="false" afterPath="$PROJECT_DIR$/esp01/Q0257-Sketch.ino" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +67,7 @@
       <workItem from="1618490124766" duration="20000" />
       <workItem from="1623280053526" duration="1050000" />
       <workItem from="1624487362797" duration="6078000" />
-      <workItem from="1624545550864" duration="2885000" />
+      <workItem from="1624545550864" duration="6079000" />
     </task>
     <servers />
   </component>
